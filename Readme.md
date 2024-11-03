@@ -1,7 +1,8 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Александр  Ковалев](https://up.htmlacademy.ru/adaptive-individual/2/user/1313907).
-* Наставник: `Неизвестно`.
+* Наставник: [Андрей Грачев](https://htmlacademy.ru/profile/angra).
+
 
 ---
 
