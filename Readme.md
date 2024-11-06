@@ -2,7 +2,7 @@
 
 * Студент: [Александр  Ковалев](https://up.htmlacademy.ru/adaptive-individual/2/user/1313907).
 * Наставник: [Андрей Грачев](https://htmlacademy.ru/profile/angra).
-
+* Сайт: [Cat-energy](https://alexandervlg.github.io/1313907-cat-energy-2/).
 ---
 
 **Обратите внимание, что папка с вашими исходными файлами для работы над проектом — `source/`.**
