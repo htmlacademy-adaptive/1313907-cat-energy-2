@@ -12,21 +12,21 @@
 <body class="page__body">
   <header class="main-header">
 
-    <a class="main-header__logo" href="index.html">
-      <img class="main-header__logo-image" src="/" alt="Логотип сайта Cat-energy." width="70" height="59">
-      <img class="main-header__logo-image logo" src="/" alt="Логотип сайта Cat-energy." width="118" height="21">
-    </a>
-    <nav class="main-navigation">
-      <button class="main-navigation__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-      <div class="main-navigation__wrapper">
-        <ul class="main-navigation__list">
-          <li class="main-navigation__item main-navigation__item--current"><a class="main-navigation__link" href="index.html">Главная</a></li>
-          <li class="main-navigation__item"><a class="main-navigation__link" href="catalog.html">Каталог продукции</a></li>
-          <li class="main-navigation__item"><a class="main-navigation__link" href="#">Подбор программы</a></li>
+    <nav class="navigation">
+      <a class="navigation__logo" href="index.html">
+        <img class="navigation__logo-image" src="/" alt="Логотип сайта Cat-energy." width="70" height="59">
+        <img class="navigation__logo-image" src="/" alt="Логотип сайта Cat-energy." width="118" height="21">
+      </a>
+      <div class="navigation__wrapper">
+        <ul class="navigation__list">
+          <li class="navigation__item navigation__item--current"><a class="navigation__link" href="index.html">Главная</a></li>
+          <li class="navigation__item"><a class="navigation__link" href="catalog.html">Каталог продукции</a></li>
+          <li class="navigation__item"><a class="navigation__link" href="#">Подбор программы</a></li>
         </ul>
       </div>
+      <button class="navigation__menu-button" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
     </nav>
   </header>
 
@@ -55,7 +55,7 @@
               <dt class="catalog__info-title">Цена</dt>
               <dd class="catalog__info-description">700 &#8381;</dd>
             </dl>
-            <button class="button button-primary" type="button">Заказать</button>
+            <a class="button button-primary" href="#">Заказать</a>
           </article>
           <article class="catalog__item">
             <a class="catalog__item-link" href="product.html">
@@ -229,10 +229,9 @@
       <div class="subscribe__wrapper">
         <h2 class="subscribe__title">Акции и новинки</h2>
         <p class="subscribe__description">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
-        <!-- в поиске адреса для action -->
-        <form action="#" method="post">
-          <label for="email-subscribe">
-            <input class="input" type="email" name="email" id="email-subscribe" placeholder="Kuklachev@gmail.com">
+        <form action="https://echo.htmlacademy.ru/" method="post">
+          <label>
+            <input class="input" type="email" name="email" id="email-subscribe" placeholder="Kuklachev@gmail.com" required>
           </label>
           <button type="submit">Подписаться</button>
         </form>
@@ -262,10 +261,10 @@
       <a class="main-footer__logo" href="index.html">
         <img class="main-footer__logo-image" src="#" width="128" height="24" alt="Логотип сайта.">
       </a>
-      <ul class="socials-list">
-        <li class="socials-list__item"><a class="socials-list__item-link" href="#"><span class="visually-hidden">ВКонтакте</span></a></li>
-        <li class="socials-list__item"><a class="socials-list__item-link" href="#"><span class="visually-hidden">Ютуб</span></a></li>
-        <li class="socials-list__item"><a class="socials-list__item-link" href="#"><span class="visually-hidden">Телеграмм</span></a></li>
+      <ul class="social">
+        <li class="social__item"><a class="social__link social__link--vkontakte" href="#"><span class="visually-hidden">ВКонтакте</span></a></li>
+        <li class="social__item"><a class="social__link social__link--youtube" href="#"><span class="visually-hidden">Ютуб</span></a></li>
+        <li class="social__item"><a class="social__link social__link--telegram" href="#"><span class="visually-hidden">Телеграмм</span></a></li>
       </ul>
       <a class="main-footer__logo" href="https://htmlacademy.ru/intensive/adaptive">
         <p class="main-footer__text">HTML Academy</p>
