@@ -5,6 +5,10 @@
   <meta charset="UTF-8">
   <title>Cat Energy</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="icon" href="favicon.ico"><!-- 32×32 -->
+  <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicons/icon-180.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="styles/styles.css">
   <script src="scripts/index.js" defer></script>
 </head>
@@ -32,7 +36,11 @@
         Функциональное<br>
         питание для котов</h1>
       <p class="promo__description">Занялся собой? Займись котом!</p>
-      <img class="promo__image" src="/" width="280" height="270" alt="Полезная еда для котов.">
+      <picture>
+        <source media="(min-width: 1440px)" width="552" height="499" type="image/png" srcset="images/index-images/hero-image@1x.png 1x, images/index-images/hero-image@2x.png 2x">
+        <source media="(min-width: 768px)" width="709" height="609" type="image/png" srcset="images/index-images/hero-image-tablet@1x.png 1x, images/index-images/hero-image-tablet@2x.png 2x">
+        <img class="promo__image" src="images/index-images/hero-image-mobile@1x.png" srcset="images/index-images/hero-image-mobile@2x.png 2x" width="280" height="270" alt="Полезная еда для котов.">
+      </picture>
       <a class="button" href="program.html">Подобрать программу</a>
     </section>
   </header>
@@ -87,10 +95,16 @@
         <div class="history__list-wrapper slider">
           <ul class="history__list slider__list">
             <li class="history__item slider__item">
-              <img class="history__item-image" src="#" width="280" height="256" alt="Фотография упитанного кота.">
+              <picture>
+                <source media="(min-width: 768px)" type="image/png" width="560" height="512" srcset="images/index-images/fat-cat-tablet@1x.png 1x, images/index-images/fat-cat-tablet@2x.png 2x">
+                <img class="history__item-image" src="images/index-images/fat-cat-mobile@1x.png" srcset="images/index-images/fat-cat-mobile@2x.png" width="280" height="256" alt="Фотография упитанного кота.">
+              </picture>
             </li>
             <li class="history__item slider__item">
-              <img class="history__item-image" src="#" width="280" height="256" alt="Фотография худого кота.">
+              <picture>
+                <source media="(min-width: 768px)" type="image/png" width="560" height="512" srcset="images/index-images/thin-cat-tablet@1x.png 1x, images/index-images/thin-cat-tablet@2x.png 2x">
+                <img class="history__item-image" src="images/index-images/thin-cat-mobile@1x.png" srcset="images/index-images/thin-cat-mobile@2x.png" width="280" height="256" alt="Фотография худого кота.">
+              </picture>
             </li>
           </ul>
           <div class="history__bar">
@@ -117,7 +131,11 @@
     </section>
     <section class="map">
       <h3 class="visually-hidden">Карта города Санкт-Петербург.</h3>
-      <img class="map-image" src="#" width="320" height="250" alt="Карта города Санкт-Петербург.">
+      <picture>
+        <source media="(min-width: 1440px)" type="image/png" width="1440" height="400" srcset="images/location@1x.png 1x, images/location@2x.png 2x">
+        <source media="(min-width: 768px)" type="image/png" width="768" height="400" srcset="images/location-tablet@1x.png 1x, images/location-tablet@2x.png 2x">
+        <img class="map-image" src="images/location-mobile@1x.png" srcset="images/location-mobile@2x.png" width="320" height="250" alt="Карта города Санкт-Петербург.">
+      </picture>
     </section>
   </main>
   <footer class="main-footer">
