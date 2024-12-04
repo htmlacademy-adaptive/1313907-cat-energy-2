@@ -1,0 +1,22 @@
+.button {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: $bg-basic-green;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  &--background-color {
+    background-color: #f2f2f2;
+  }
+
+  &--text-color {
+    color: $color-base-text;
+  }
+}

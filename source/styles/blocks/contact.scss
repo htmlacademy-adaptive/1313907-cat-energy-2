@@ -1,0 +1,26 @@
+.contact {
+  line-height: 20px;
+}
+
+.contact__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #111111;
+  text-transform: uppercase;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+
+.contact__address {
+  font-size: 14px;
+  font-style: normal;
+
+  @media (min-width: 768px) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
