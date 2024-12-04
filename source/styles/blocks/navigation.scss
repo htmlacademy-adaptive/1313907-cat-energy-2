@@ -5,7 +5,7 @@
   line-height: 20px;
   text-transform: uppercase;
 
-  @media screen and (min-width: 768px) and (max-width: 1439px) {
+  @media (min-width: 768px) {
     font-size: 18px;
   }
 }
@@ -16,5 +16,6 @@
 
   @media (min-width: 1440px) {
     color: #ffffff;
+    font-size: 20px;
   }
 }
