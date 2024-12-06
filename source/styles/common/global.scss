@@ -4,3 +4,9 @@
   font-weight: 400;
   color: $color-base-text;
 }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
