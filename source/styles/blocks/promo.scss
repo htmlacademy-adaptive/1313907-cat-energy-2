@@ -4,6 +4,16 @@
   line-height: 36px;
   color: #ffffff;
   background: rgba(104, 183, 56, 0.85);
+  background-image: url("../../images/index-background-mobile@2x.jpg");
+  background-repeat: no-repeat;
+
+  @media (min-width: 768px) {
+    background-image: none;
+  }
+
+  @media (min-width: 1440px) {
+    background-image: url("../../images/index-background-desktop@2x.jpg");
+  }
 }
 
 .promo__title {

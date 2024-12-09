@@ -3,3 +3,25 @@
   line-height: 20px;
   color: #444444;
 }
+
+.main-footer__logo {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:focus-visible {
+    opacity: 0.8;
+    outline-color: $bg-basic-green;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.main-footer__logo-copyright {
+  &:focus-visible {
+    outline-color: $bg-basic-green;
+  }
+}
+

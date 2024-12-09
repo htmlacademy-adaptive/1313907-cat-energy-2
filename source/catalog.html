@@ -17,19 +17,25 @@
   <header class="main-header">
     <nav class="navigation">
       <a class="navigation__logo" href="index.html">
-        <img class="navigation__logo-image" src="/" alt="Логотип сайта Cat-energy." width="70" height="59">
-        <img class="navigation__logo-image" src="/" alt="Логотип сайта Cat-energy." width="118" height="21">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="images/logo-desktop.svg" width="70" height="59  " type="image/svg+xml">
+          <source media="(min-width: 768px)" srcset="images/logo-tablet.svg" width="60" height="50" type="image/svg+xml">
+          <img class="navigation__logo-image" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип сайта Cat Energy.">
+        </picture>
+        <img class="navigation__logo-image" src="images/logo-text.svg" alt="Логотип сайта Cat-energy." width="101" height="18">
       </a>
       <div class="navigation__wrapper">
         <ul class="navigation__list">
-          <li class="navigation__item navigation__item--current"><a class="navigation__link" href="index.html">Главная</a></li>
-          <li class="navigation__item"><a class="navigation__link" href="catalog.html">Каталог продукции</a></li>
+          <li class="navigation__item"><a class="navigation__link" href="index.html">Главная</a></li>
+          <li class="navigation__item navigation__item--current"><a class="navigation__link" href="catalog.html">Каталог продукции</a></li>
           <li class="navigation__item"><a class="navigation__link" href="#">Подбор программы</a></li>
         </ul>
       </div>
-      <button class="navigation__menu-button" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
+      <div class="button-wrapper">
+        <button class="burger-button" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+      </div>
     </nav>
   </header>
 
@@ -294,16 +300,18 @@
   <footer class="main-footer">
     <div class="main-footer__wrapper">
       <a class="main-footer__logo" href="index.html">
-        <img class="main-footer__logo-image" src="#" width="128" height="24" alt="Логотип сайта.">
+        <img class="main-footer__logo-image" src="images/logo-text.svg" width="128" height="24" alt="Логотип сайта Cat Energy.">
       </a>
       <ul class="social">
         <li class="social__item"><a class="social__link social__link--vkontakte" href="#"><span class="visually-hidden">ВКонтакте</span></a></li>
         <li class="social__item"><a class="social__link social__link--youtube" href="#"><span class="visually-hidden">Ютуб</span></a></li>
         <li class="social__item"><a class="social__link social__link--telegram" href="#"><span class="visually-hidden">Телеграмм</span></a></li>
       </ul>
-      <a class="main-footer__logo" href="https://htmlacademy.ru/intensive/adaptive">
+      <a class="main-footer__logo-copyright" href="https://htmlacademy.ru/intensive/adaptive">
         <p class="main-footer__text">HTML Academy</p>
-        <img class="main-footer__logo-image" src="#" width="27" height="34" alt="Логотип сайта.">
+        <svg width="27" height="34">
+          <use href="icons/stack.svg#logo-html-academy"></use>
+        </svg>
       </a>
     </div>
   </footer>
