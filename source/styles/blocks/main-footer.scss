@@ -20,8 +20,17 @@
 }
 
 .main-footer__logo-copyright {
-  &:focus-visible {
-    outline-color: $bg-basic-green;
+  text-decoration: none;
+
+  &:hover svg {
+    fill: $bg-basic-green;
+  }
+
+  &:active svg {
+    opacity: 0.3;
+  }
+
+  &:active p {
+    opacity: 0.3;
   }
 }
-
