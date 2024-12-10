@@ -22,6 +22,12 @@
 .main-footer__logo-copyright {
   text-decoration: none;
 
+  fill: #666666;
+
+  &:focus-visible {
+    outline-color: $bg-basic-green;
+  }
+
   &:hover svg {
     fill: $bg-basic-green;
   }
