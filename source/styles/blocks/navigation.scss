@@ -2,6 +2,7 @@
   position: relative;
   display: flex;
   align-items: center;
+  padding: 13px 0 15px;
   font-family: $secondary-font;
   font-weight: 400;
   font-size: 20px;
@@ -41,17 +42,28 @@ picture {
 }
 
 .navigation__list {
-  position: absolute;
-  top: 45px;
-  left: 0;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  background-color: #ffffff;
-
   margin: 0;
   padding: 0;
   list-style-type: none;
+
+  @media (max-width: $tablet-width) {
+    display: none;
+
+    &--show {
+      position: absolute;
+      top: 60px;
+      left: 0;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      background-color: #ffffff;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
   @media (min-width: 1440px) {
     background-color: $bg-basic-green;
@@ -62,8 +74,9 @@ picture {
   justify-items: center;
   border-top: 1px solid #e6e6e6;
 
+  @media (min-width: $tablet-width) {
+    border-top: none;
 
-  @media (min-width: 768px) {
     &--current {
       border-bottom: 2px solid $bg-basic-green;
     }
