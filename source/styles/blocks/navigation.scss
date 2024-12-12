@@ -1,5 +1,8 @@
 .navigation {
-  font-family: "Oswald", sans-serif;
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-family: $secondary-font;
   font-weight: 400;
   font-size: 20px;
   line-height: 20px;
@@ -11,6 +14,10 @@
 }
 
 .navigation__logo {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+
   &:hover {
     opacity: 0.8;
   }
@@ -25,12 +32,25 @@
 }
 
 picture {
+  display: flex;
   font-size: 0;
 }
 
+.navigation__logo-text {
+  margin-left: 56px;
+}
+
 .navigation__list {
+  position: absolute;
+  top: 45px;
+  left: 0;
   display: flex;
-  padding: 10px;
+  flex-direction: column;
+  width: 100%;
+  background-color: #ffffff;
+
+  margin: 0;
+  padding: 0;
   list-style-type: none;
 
   @media (min-width: 1440px) {
@@ -39,6 +59,10 @@ picture {
 }
 
 .navigation__item {
+  justify-items: center;
+  border-top: 1px solid #e6e6e6;
+
+
   @media (min-width: 768px) {
     &--current {
       border-bottom: 2px solid $bg-basic-green;
@@ -54,7 +78,7 @@ picture {
 
 .navigation__link {
   display: block;
-  padding: 10px 0;
+  padding: 22px 10px 24px;
   color: #000000;
   text-decoration: none;
 
