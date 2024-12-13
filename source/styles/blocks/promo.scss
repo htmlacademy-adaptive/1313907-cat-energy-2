@@ -1,27 +1,38 @@
 .promo {
+  padding-top: 27px;
   text-align: center;
   font-family: $secondary-font;
   line-height: 36px;
   color: #ffffff;
-  background: rgba(104, 183, 56, 0.85);
-  background-image: url("../../images/index-background-mobile@2x.jpg");
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85) 60%, #ffffff 40%), url("../../images/index-background-mobile@2x.jpg");
   background-repeat: no-repeat;
+  background-size: 302px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    padding-top: 65px;
+    padding-left: 73px;
+    text-align: left;
+    background-color: #ffffff;
     background-image: none;
   }
 
-  @media (min-width: 1440px) {
-    background-image: url("../../images/index-background-desktop@2x.jpg");
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 160px 70px 1fr;
+    padding-left: 155px;
+    background-color: transparent;
   }
 }
 
 .promo__title {
   margin: 0;
+  margin-bottom: 25px;
   font-weight: 400;
   font-size: 36px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 40px;
     font-size: 60px;
     line-height: 60px;
     color: #000000;
@@ -29,13 +40,31 @@
 }
 
 .promo__description {
+  margin: 0;
+  margin-bottom: 29px;
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
+    grid-row: 2/2;
+    margin-bottom: 50px;
     font-size: 20px;
     line-height: 20px;
     color: #000000;
+  }
+}
+
+.promo__image {
+  @media (min-width: $tablet-width) {
+    grid-column: 1/-1;
+    grid-row: 3;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -45px;
+    margin-left: -116px;
+    grid-column: 2/-1;
+    grid-row: 1/-1;
   }
 }

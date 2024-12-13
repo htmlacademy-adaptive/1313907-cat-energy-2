@@ -1,16 +1,14 @@
 .button {
+  display: block;
+  padding: 10px;
   font-family: $secondary-font;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
   text-transform: uppercase;
+  text-decoration: none;
   background-color: $bg-basic-green;
-
-  @media (min-width: 768px) {
-    font-size: 20px;
-    line-height: 26px;
-  }
 
   &--background-color {
     background-color: #f2f2f2;
@@ -18,5 +16,28 @@
 
   &--text-color {
     color: $color-base-text;
+  }
+
+  @media (min-width: 768px) {
+    display: inline-block;
+    padding: 14px 26px;
+    font-size: 20px;
+    line-height: 26px;
+
+    &--margin {
+      margin-right: auto;
+      margin-bottom: auto;
+    }
+
+    &--grid {
+      grid-column: 1;
+      grid-row: 3;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--grid {
+      // grid-row: 2;
+    }
   }
 }

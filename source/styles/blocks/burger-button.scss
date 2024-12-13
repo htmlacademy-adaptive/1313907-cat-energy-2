@@ -31,10 +31,10 @@
   }
 
   &--show::before {
-    transform: translateY(5px) rotate(-45deg);
+    transform: translateY(5px) rotate(-405deg);
   }
 
   &--show::after {
-    transform: translateY(-4px) rotate(45deg);
+    transform: translateY(-4px) rotate(405deg);
   }
 }
