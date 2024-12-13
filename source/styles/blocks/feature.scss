@@ -1,5 +1,12 @@
+.feature-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
 .feature__title {
   position: relative;
+  margin: 0;
+  margin-left: 91px;
   font-family: $secondary-font;
   font-weight: 400;
   font-size: 24px;
@@ -8,7 +15,8 @@
   color: #000000;
 
   &::before {
-    display: block;
+    position: absolute;
+    left: 0;
     content: "";
     width: 50px;
     height: 50px;
@@ -17,8 +25,8 @@
   }
 
   &::after {
-    position: absolute;
     content: "";
+    position: absolute;
   }
 
   &--slim-icon::after {
