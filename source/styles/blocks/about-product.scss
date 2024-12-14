@@ -1,4 +1,11 @@
+.about-product {
+  padding-top: 20px;
+  padding-bottom: 49px;
+}
+
 .about-product__title {
+  margin: 0;
+  margin-bottom: 40px;
   font-family: $secondary-font;
   font-weight: 400;
   font-size: 36px;
@@ -10,12 +17,24 @@
   }
 }
 
+.about-product__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
 .about-product__item {
+  position: relative;
+  padding-left: 80px;
+  margin-bottom: 20px;
   font-size: 14px;
   line-height: 18px;
 
   &::before {
     content: "";
+    position: absolute;
+    top: -3px;
+    left: 0;
     width: 60px;
     height: 60px;
     background-color: $bg-basic-green;
