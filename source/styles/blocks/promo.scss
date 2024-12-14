@@ -20,7 +20,7 @@
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 160px 70px 1fr;
-    padding-left: 155px;
+    padding-left: 195px;
     background-color: transparent;
   }
 }
@@ -63,7 +63,7 @@
 
   @media (min-width: $desktop-width) {
     margin-top: -45px;
-    margin-left: -116px;
+    margin-left: -129px;
     grid-column: 2/-1;
     grid-row: 1/-1;
   }

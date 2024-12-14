@@ -34,10 +34,4 @@
       grid-row: 3;
     }
   }
-
-  @media (min-width: $desktop-width) {
-    &--grid {
-      // grid-row: 2;
-    }
-  }
 }
