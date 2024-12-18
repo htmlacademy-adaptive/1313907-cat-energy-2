@@ -77,6 +77,11 @@ picture {
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 33px;
   }
 }
 
@@ -102,6 +107,10 @@ picture {
     &--current {
       border-color: #ffffff;
     }
+
+    &--current-catalog {
+      border-color: $bg-basic-green;
+    }
   }
 }
 
@@ -124,11 +133,15 @@ picture {
   }
 
   @media (min-width: $tablet-width) {
-    padding: 12px 16px;
+    padding: 12px 0;
   }
 
   @media (min-width: $desktop-width) {
     color: #ffffff;
     font-size: 20px;
+
+    &--color {
+      color: #000000;
+    }
   }
 }

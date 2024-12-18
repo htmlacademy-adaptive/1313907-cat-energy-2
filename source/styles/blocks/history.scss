@@ -22,9 +22,11 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin: 0;
     grid-template-columns: repeat(4, 250px);
     grid-template-rows: repeat(8, auto);
     column-gap: 79px;
+    max-width: 1240px;
   }
 }
 

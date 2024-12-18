@@ -1,0 +1,11 @@
+.map__container {
+  @media (min-width: $desktop-width) {
+    position: relative;
+    display: grid;
+  }
+}
+
+.map-image {
+  display: block;
+  margin: 0 auto;
+}

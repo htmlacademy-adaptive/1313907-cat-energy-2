@@ -1,11 +1,35 @@
 .contact {
   padding: 20px 0;
   line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 60px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 50%;
+    left: 110px;
+    padding: 60px 80px;
+    width: 562px;
+    background-color: #ffffff;
+    transform: translateY(-50%);
+  }
 }
 
 .contact__container {
   display: flex;
   justify-content: space-between;
+  margin: 0 auto;
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+  }
 }
 
 .contact__title {
@@ -27,6 +51,7 @@
   font-style: normal;
 
   @media (min-width: $tablet-width) {
+    align-self: center;
     font-size: 16px;
     line-height: 20px;
   }

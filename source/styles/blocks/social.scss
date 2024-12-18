@@ -7,6 +7,13 @@
   list-style-type: none;
   border-top: 1px solid #d9d9d9;
   border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    grid-column: 2/3;
+    justify-self: center;
+    border: none;
+  }
 }
 
 .social__link {

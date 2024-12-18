@@ -15,28 +15,30 @@
 
 <body class="page__body">
   <header class="main-header">
-    <nav class="navigation">
-      <a class="navigation__logo" href="index.html">
-        <picture>
-          <source media="(min-width: 1440px)" srcset="images/logo-desktop.svg" width="70" height="59" type="image/svg+xml">
-          <source media="(min-width: 768px)" srcset="images/logo-tablet.svg" width="60" height="50" type="image/svg+xml">
-          <img class="navigation__logo-image" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип сайта Cat Energy.">
-        </picture>
-        <img class="navigation__logo-image" src="images/logo-text.svg" alt="Логотип сайта Cat-energy." width="101" height="18">
-      </a>
-      <div class="navigation__wrapper">
-        <ul class="navigation__list">
-          <li class="navigation__item"><a class="navigation__link" href="index.html">Главная</a></li>
-          <li class="navigation__item navigation__item--current"><a class="navigation__link" href="catalog.html">Каталог продукции</a></li>
-          <li class="navigation__item"><a class="navigation__link" href="#">Подбор программы</a></li>
-        </ul>
-      </div>
-      <div class="button-wrapper">
-        <button class="burger-button" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-      </div>
-    </nav>
+    <div class="container">
+      <nav class="navigation">
+        <a class="navigation__logo" href="index.html">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="images/logo-desktop.svg" width="70" height="59" type="image/svg+xml">
+            <source media="(min-width: 768px)" srcset="images/logo-tablet.svg" width="60" height="50" type="image/svg+xml">
+            <img class="navigation__logo-image" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип сайта Cat Energy.">
+          </picture>
+          <img class="navigation__logo-image" src="images/logo-text.svg" alt="Логотип сайта Cat-energy." width="101" height="18">
+        </a>
+        <div class="navigation__wrapper">
+          <ul class="navigation__list">
+            <li class="navigation__item"><a class="navigation__link navigation__link--color" href="index.html">Главная</a></li>
+            <li class="navigation__item navigation__item--current navigation__item--current-catalog"><a class="navigation__link navigation__link--color" href="catalog.html">Каталог продукции</a></li>
+            <li class="navigation__item"><a class="navigation__link navigation__link--color" href="#">Подбор программы</a></li>
+          </ul>
+        </div>
+        <div class="button-wrapper">
+          <button class="burger-button" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+        </div>
+      </nav>
+    </div>
   </header>
 
   <main class="main-container">
