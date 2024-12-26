@@ -1,7 +1,7 @@
 .banner {
   padding: 59px 60px 43px;
   background-color: rgba(104, 183, 56, 0.85);
-  background-image: url("../../images/banner-background@2x.jpg");
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85) 100%, #ffffff 0%), url("../../images/banner-background@2x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }

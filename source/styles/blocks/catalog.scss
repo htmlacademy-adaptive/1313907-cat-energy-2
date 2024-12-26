@@ -129,6 +129,7 @@
   line-height: 16px;
 
   @media (min-width: $desktop-width) {
+    margin-bottom: 32px;
     padding: 0 38px;
   }
 }
@@ -173,6 +174,11 @@
 
   @media (min-width: $tablet-width) {
     margin-top: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 169px;
+    margin: 0 auto;
   }
 }
 
