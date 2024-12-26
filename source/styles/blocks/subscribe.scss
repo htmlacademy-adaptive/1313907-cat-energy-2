@@ -4,11 +4,37 @@
   color: #000000;
 }
 
+.subscribe__container {
+  padding: 40px 0;
+}
+
 .subscribe__title {
+  margin: 0;
+  margin-bottom: 32px;
   font-weight: 400;
   font-size: 24px;
 }
 
 .subscribe__description {
+  margin: 0;
+  margin-bottom: 24px;
+  text-align: center;
   font-size: 16px;
+}
+
+.subscribe__input {
+  margin-bottom: 16px;
+  padding: 13px;
+  font-family: $secondary-font;
+  width: 100%;
+  font-weight: 400;
+  font-size: 20px;
+  color: #444444;
+  text-transform: uppercase;
+  border: 1px solid #cdcdcd;
+}
+
+.subscribe__button {
+  width: 100%;
+  border: none;
 }
