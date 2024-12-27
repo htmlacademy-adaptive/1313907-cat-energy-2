@@ -1,6 +1,15 @@
 .main-footer {
+  margin: 0 auto;
   padding: 40px 0;
   background-color: #f2f2f2;
+
+  @media (min-width: $tablet-width) {
+    max-width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1440px;
+  }
 }
 
 .main-footer__container {
@@ -58,7 +67,7 @@
   align-items: center;
   text-decoration: none;
   fill: #666666;
-  min-width: 320px;
+  min-width: 280px;
 
   &:focus-visible {
     outline-color: $bg-basic-green;

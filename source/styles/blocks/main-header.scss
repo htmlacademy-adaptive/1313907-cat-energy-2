@@ -1,9 +1,21 @@
 .main-header {
-  padding: 0 20px;
-  min-width: 320px;
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+.main-header__container {
+  margin: 0 auto;
+  width: 280px;
 
   @media (min-width: $tablet-width) {
-    padding: 0 30px;
-    min-width: 768px;
+    width: 708px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+    background-image: linear-gradient(to right, #ffffff 50%, rgba(104, 183, 56, 0.85) 50%), url("../../images/index-background-desktop@2x.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 100%;
   }
 }
