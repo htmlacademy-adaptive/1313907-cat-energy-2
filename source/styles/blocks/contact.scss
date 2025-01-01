@@ -1,9 +1,7 @@
 .contact {
   margin: 0 auto;
-  padding: 20px 0;
+  padding: 26px 0;
   line-height: 20px;
-  background-color: #f2f2f2;
-
 
   @media (min-width: $tablet-width) {
     padding: 60px 0;
@@ -19,6 +17,10 @@
     background-color: #ffffff;
     transform: translateY(-50%);
   }
+}
+
+.contact--background {
+  background-color: #f2f2f2;
 }
 
 .contact__container {
