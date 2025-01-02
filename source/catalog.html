@@ -23,7 +23,7 @@
             <source media="(min-width: 768px)" srcset="images/logo-tablet.svg" width="60" height="50" type="image/svg+xml">
             <img class="navigation__logo-image" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип сайта Cat Energy.">
           </picture>
-          <img class="navigation__logo-image" src="images/logo-text.svg" alt="Логотип сайта Cat-energy." width="101" height="18">
+          <img class="navigation__logo-text" src="images/logo-text.svg" alt="Логотип сайта Cat-energy." width="101" height="18">
         </a>
         <div class="navigation__wrapper">
           <ul class="navigation__list">
@@ -221,6 +221,12 @@
           <a class="button button-primary catalog__button" href="#">Заказать</a>
         </article>
         <article class="catalog__item-more">
+          <button class="button-show-more" type="button">
+            <div class="visually-hidden">Показать еще</div>
+            <svg width="30" height="30">
+              <use href="icons/stack.svg#plus-icon"></use>
+            </svg>
+          </button>
           <h3 class="catalog__item-title catalog__item-show-more-title">Показать еще 100500 товаров</h3>
           <p class="catalog__item-subtitle">На самом деле вкусов гораздо больше!</p>
           <a class="button catalog__button button--background-color button--text-color" href="#">Показать все</a>

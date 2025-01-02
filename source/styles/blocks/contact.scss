@@ -20,7 +20,9 @@
 }
 
 .contact--background {
-  background-color: #f2f2f2;
+  @media (max-width: 1439px) {
+    background-color: #f2f2f2;
+  }
 }
 
 .contact__container {

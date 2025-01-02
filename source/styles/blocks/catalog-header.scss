@@ -1,3 +1,5 @@
 .catalog-header {
-  border-bottom: 2px solid #ebebeb;
+  @media (max-width: 767px) {
+    border-bottom: 2px solid #ebebeb;
+  }
 }
