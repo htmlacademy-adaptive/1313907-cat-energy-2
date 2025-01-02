@@ -6,6 +6,19 @@
   }
 }
 
+.catalog__container {
+  margin: 0 auto;
+  max-width: 320px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 708px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1220px;
+  }
+}
+
 .catalog__title {
   margin: 0;
   margin-left: 20px;
@@ -17,6 +30,7 @@
   color: #000000;
 
   @media (min-width: $tablet-width) {
+    margin-left: 0;
     font-size: 60px;
     line-height: 60px;
     margin-bottom: 84px;
