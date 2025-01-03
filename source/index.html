@@ -15,30 +15,30 @@
 
 <body class="page__body">
   <header class="main-header">
-    <div class="main-header__container">
-      <nav class="navigation">
-        <a class="navigation__logo" href="index.html">
-          <picture>
-            <source media="(min-width: 1440px)" srcset="images/logo-desktop.svg" width="70" height="59" type="image/svg+xml">
-            <source media="(min-width: 768px)" srcset="images/logo-tablet.svg" width="60" height="50" type="image/svg+xml">
-            <img class="navigation__logo-image" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип сайта Cat Energy.">
-          </picture>
-          <img class="navigation__logo-text" src="images/logo-text.svg" alt="Логотип сайта Cat-energy." width="101" height="18">
-        </a>
-        <div class="navigation__wrapper">
-          <ul class="navigation__list">
-            <li class="navigation__item navigation__item--current"><a class="navigation__link" href="index.html">Главная</a></li>
-            <li class="navigation__item"><a class="navigation__link" href="catalog.html">Каталог продукции</a></li>
-            <li class="navigation__item"><a class="navigation__link" href="#">Подбор программы</a></li>
-          </ul>
-        </div>
-        <div class="button-wrapper">
-          <button class="burger-button" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
-        </div>
-      </nav>
-      <section class="promo">
+    <nav class="navigation">
+      <a class="navigation__logo" href="index.html">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="images/logo-desktop.svg" width="70" height="59" type="image/svg+xml">
+          <source media="(min-width: 768px)" srcset="images/logo-tablet.svg" width="60" height="50" type="image/svg+xml">
+          <img class="navigation__logo-image" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип сайта Cat Energy.">
+        </picture>
+        <img class="navigation__logo-text" src="images/logo-text.svg" alt="Логотип сайта Cat-energy." width="101" height="18">
+      </a>
+      <div class="navigation__wrapper">
+        <ul class="navigation__list">
+          <li class="navigation__item navigation__item--current"><a class="navigation__link" href="index.html">Главная</a></li>
+          <li class="navigation__item"><a class="navigation__link" href="catalog.html">Каталог продукции</a></li>
+          <li class="navigation__item"><a class="navigation__link" href="#">Подбор программы</a></li>
+        </ul>
+      </div>
+      <div class="button-wrapper">
+        <button class="burger-button" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+      </div>
+    </nav>
+    <section class="promo">
+      <div class="container promo__container">
         <h1 class="promo__title">
           Функциональное<br>
           питание для котов</h1>
@@ -49,8 +49,8 @@
           <img class="promo__image" src="images/index-images/hero-image-mobile@1x.png" srcset="images/index-images/hero-image-mobile@2x.png 2x" width="280" height="270" alt="Полезная еда для котов.">
         </picture>
         <a class="button button--margin button--grid" href="program.html">Подобрать программу</a>
-      </section>
-    </div>
+      </div>
+    </section>
   </header>
   <main class="main-container">
     <section class="programs">
@@ -104,13 +104,13 @@
         <p class="history__cost">Затраты на питание&#58; <span>15 000 руб.</span></p>
         <div class="slider">
           <ul class="slider__list">
-            <li class="slider__item">
+            <li class="slider__item slider__item--before">
               <picture>
                 <source media="(min-width: 768px)" type="image/png" width="560" height="512" srcset="images/index-images/fat-cat-tablet@1x.png 1x, images/index-images/fat-cat-tablet@2x.png 2x">
                 <img class="slider__item-image" src="images/index-images/fat-cat-mobile@1x.png" srcset="images/index-images/fat-cat-mobile@2x.png" width="280" height="256" alt="Фотография упитанного кота.">
               </picture>
             </li>
-            <li class="slider__item">
+            <li class="slider__item slider__item--after">
               <picture>
                 <source media="(min-width: 768px)" type="image/png" width="560" height="512" srcset="images/index-images/thin-cat-tablet@1x.png 1x, images/index-images/thin-cat-tablet@2x.png 2x">
                 <img class="slider__item-image" src="images/index-images/thin-cat-mobile@1x.png" srcset="images/index-images/thin-cat-mobile@2x.png" width="280" height="256" alt="Фотография худого кота.">

@@ -4,24 +4,29 @@
   font-family: $secondary-font;
   line-height: 36px;
   color: #ffffff;
-  background-image: linear-gradient(rgba(104, 183, 56, 0.85) 60%, #ffffff 40%), url("../../images/index-background-mobile@2x.jpg");
-  background-repeat: no-repeat;
-  background-size: 302px;
 
   @media (min-width: $tablet-width) {
-    display: grid;
-    padding-top: 65px;
-    padding-left: 73px;
     text-align: left;
     background-color: #ffffff;
     background-image: none;
   }
 
   @media (min-width: $desktop-width) {
+    background-color: transparent;
+  }
+}
+
+.promo__container {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    padding-top: 65px;
+    padding-left: 120px;
+  }
+
+  @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 160px 70px 1fr;
-    padding-left: 195px;
-    background-color: transparent;
+    padding-left: 83px;
   }
 }
 
@@ -59,11 +64,12 @@
   @media (min-width: $tablet-width) {
     grid-column: 1/-1;
     grid-row: 3;
+    margin-left: -40px;
   }
 
   @media (min-width: $desktop-width) {
     margin-top: -45px;
-    margin-left: -129px;
+    margin-left: -95px;
     grid-column: 2/-1;
     grid-row: 1/-1;
   }
