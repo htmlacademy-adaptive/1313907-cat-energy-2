@@ -13,6 +13,18 @@
   }
 }
 
+.about-product__container {
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+}
+
 .about-product__title {
   margin: 0;
   margin-bottom: 40px;
@@ -28,12 +40,11 @@
   }
 }
 
-// осталось добавить цифру на фон
-
 .about-product__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  counter-reset: about-product__item;
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -53,6 +64,7 @@
   margin-bottom: 20px;
   font-size: 14px;
   line-height: 18px;
+  z-index: 10;
 
   &::before {
     content: "";
@@ -62,6 +74,13 @@
     width: 60px;
     height: 60px;
     background-color: $bg-basic-green;
+  }
+
+  &::after {
+    position: absolute;
+    z-index: -10;
+    font-family: $secondary-font;
+    color: f2f2f2;
   }
 
   &--leaf::before {
@@ -122,6 +141,17 @@
       margin-bottom: 31px;
       width: 80px;
       height: 80px;
+    }
+
+    &::after {
+      content: counter(about-product__item);
+      counter-increment: about-product__item;
+      top: 0;
+      right: 0;
+      width: 136px;
+      height: 280px;
+      font-size: 280px;
+      line-height: 280px;
     }
   }
 

@@ -17,10 +17,13 @@
 }
 
 .promo__container {
+  padding: 0 20px;
+
   @media (min-width: $tablet-width) {
     display: grid;
     padding-top: 65px;
     padding-left: 120px;
+    padding-right: 0;
   }
 
   @media (min-width: $desktop-width) {

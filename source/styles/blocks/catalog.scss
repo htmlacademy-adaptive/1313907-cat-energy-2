@@ -184,18 +184,6 @@
   margin-top: 17px;
   align-self: flex-end;
 
-  &:hover {
-    background-color: #5eaa2f;
-  }
-
-  &:focus-visible {
-    outline-color: $bg-basic-green;
-  }
-
-  &:active {
-    color: rgba(255, 255, 255, 0.3);
-  }
-
   @media (min-width: $tablet-width) {
     margin-top: 32px;
   }

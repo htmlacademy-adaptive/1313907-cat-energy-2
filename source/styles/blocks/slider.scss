@@ -5,9 +5,13 @@
 .slider__list {
   position: relative;
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 280px;
   padding-left: 0;
   list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 560px;
+  }
 }
 
 .slider__item {
@@ -19,6 +23,18 @@
     z-index: 10;
     overflow: hidden;
   }
+}
+
+// .slider__image-wrapper {
+//   // width: 50%;
+//   min-height: 100%;
+
+//   grid-column: 1/-1;
+//   grid-row: 1/-1;
+// }
+
+.slider__item-image {
+  min-height: 100%;
 }
 
 .slider__button {
