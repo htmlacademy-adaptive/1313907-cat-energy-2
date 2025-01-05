@@ -23,6 +23,7 @@
     width: 50%;
     z-index: 10;
     overflow: hidden;
+    background-image: linear-gradient(#ffffff 0%, #eaeaea 0%);
 
     @media (min-width: $tablet-width) {
       background-image: linear-gradient(#ffffff 45px, #eaeaea 45px);
@@ -36,8 +37,8 @@
 
 .slider__button {
   position: absolute;
-  top: 0;
-  left: 50%;
+  top: 2px;
+  left: 49%;
   padding: 0;
   width: 4px;
   background-color: #666666;
