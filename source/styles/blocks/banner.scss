@@ -27,8 +27,11 @@
     }
   }
 
-  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+  @media (min-width: $tablet-width) {
     display: flex;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
     justify-content: space-between;
     align-items: center;
     padding: 10px 35px;
@@ -37,8 +40,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 60px;
-    padding-right: 60px;
+    padding: 55px 35px 50px;
+    flex-direction: column;
   }
 }
 
@@ -53,5 +56,9 @@
     width: 161px;
     margin-right: 90px;
     text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: auto;
   }
 }

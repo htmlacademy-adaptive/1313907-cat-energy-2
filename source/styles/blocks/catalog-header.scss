@@ -2,7 +2,11 @@
   background-color: #ffffff;
   background-image: none;
 
-  @media (max-width: 767px) {
+  @media (max-width: $mobile-width-only) {
     border-bottom: 2px solid #ebebeb;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: auto;
   }
 }
