@@ -1,11 +1,22 @@
 .slider {
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1/-1;
+    justify-self: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 3/-1;
+    grid-row: 1/-1;
+  }
 }
 
 .slider__list {
   position: relative;
   display: grid;
   grid-template-columns: 280px;
+  margin: 0;
   padding-left: 0;
   list-style-type: none;
 
@@ -26,7 +37,7 @@
     background-image: linear-gradient(#ffffff 0%, #eaeaea 0%);
 
     @media (min-width: $tablet-width) {
-      background-image: linear-gradient(#ffffff 45px, #eaeaea 45px);
+      background-image: linear-gradient(#ffffff 30%, #eaeaea 30%);
     }
 
     @media (min-width: $desktop-width) {
@@ -97,5 +108,9 @@
     transform: translate(-50%, -50%);
     mask-image: url("../../icons/stack.svg#slider-arrow");
     mask-repeat: no-repeat;
+  }
+
+  @media (min-width: $tablet-width) {
+    left: 49.5%;
   }
 }

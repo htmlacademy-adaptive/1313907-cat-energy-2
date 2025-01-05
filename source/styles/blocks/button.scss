@@ -39,8 +39,8 @@
     color: $color-base-text;
   }
 
-  @media (min-width: 768px) {
-    display: inline-block;
+  @media (min-width: $tablet-width) {
+    // display: inline-block;
     padding: 14px;
     font-size: 20px;
     line-height: 26px;
@@ -50,9 +50,14 @@
       margin-bottom: auto;
     }
 
+    &--padding {
+      padding-left: 26px;
+      padding-right: 26px;
+    }
+
     &--grid {
-      grid-column: 1;
-      grid-row: 3;
+      grid-column: 1/-1;
+      grid-row: 3/4;
     }
   }
 }

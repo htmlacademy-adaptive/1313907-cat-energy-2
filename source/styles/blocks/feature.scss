@@ -4,6 +4,11 @@
   gap: 20px;
   padding: 0 20px;
 
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+    gap: 30px;
+  }
+
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -48,26 +53,26 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 77px 316px 53px 52px;
+    padding: 80px 316px 60px 55px;
 
     &::before {
-      top: 50%;
-      left: 450;
+      top: 52%;
+      left: 445;
       width: 200px;
       height: 200px;
       transform: translateY(-50%);
     }
 
     &--slim-icon::after {
-      top: 65;
-      left: 480;
+      top: 80;
+      left: 475;
       width: 140px;
       height: 194px;
     }
 
     &--pro-icon::after {
-      top: 75;
-      left: 415;
+      top: 92;
+      left: 410;
       width: 268px;
       height: 200px;
     }
@@ -141,7 +146,7 @@
   border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 48px;
+    margin-bottom: 60px;
     padding-right: 0;
     padding-bottom: 0;
     font-size: 16px;
@@ -152,7 +157,8 @@
 }
 
 .feature__link {
-  display: block;
+  display: flex;
+  align-items: center;
   font-family: $secondary-font;
   font-size: 16px;
   line-height: 16px;
@@ -170,6 +176,10 @@
     mask-repeat: no-repeat;
     background-color: #000000;
     transition: all 0.1s linear;
+
+    @media (min-width: $tablet-width) {
+      margin-left: 25px;
+    }
   }
 
   &:hover::after {

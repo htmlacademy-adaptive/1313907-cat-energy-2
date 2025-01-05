@@ -1,6 +1,6 @@
 .contact {
   margin: 0 auto;
-  padding: 30px 0 24px;
+  padding: 30px 0;
   line-height: 20px;
   background-color: #ffffff;
 
@@ -33,6 +33,7 @@
   width: 280px;
 
   @media (min-width: $tablet-width) {
+    padding: 0 40px;
     width: 708px;
   }
 

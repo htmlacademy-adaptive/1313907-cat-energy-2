@@ -28,7 +28,7 @@
 .navigation__logo {
   display: flex;
   align-items: center;
-  margin-right: auto;
+  margin-right: 94px;
 
   &:hover {
     opacity: 0.8;
@@ -82,7 +82,7 @@ picture {
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    gap: 16px;
+    gap: 32px;
   }
 
   @media (min-width: $desktop-width) {
