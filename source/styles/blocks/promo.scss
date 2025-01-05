@@ -28,7 +28,8 @@
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 160px 70px 1fr;
-    padding-left: 83px;
+    padding-top: 55px;
+    padding-left: 80px;
   }
 }
 
@@ -74,8 +75,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: -45px;
-    margin-left: -95px;
+    margin-top: -41px;
+    margin-left: -73px;
     grid-column: 2/-1;
     grid-row: 1/-1;
   }
