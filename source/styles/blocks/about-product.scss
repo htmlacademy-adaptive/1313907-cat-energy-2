@@ -64,7 +64,6 @@
   margin-bottom: 20px;
   font-size: 14px;
   line-height: 18px;
-  z-index: 10;
 
   &::before {
     content: "";
@@ -74,13 +73,6 @@
     width: 60px;
     height: 60px;
     background-color: $bg-basic-green;
-  }
-
-  &::after {
-    position: absolute;
-    z-index: -10;
-    font-family: $secondary-font;
-    color: f2f2f2;
   }
 
   &--leaf::before {
@@ -146,12 +138,17 @@
     &::after {
       content: counter(about-product__item);
       counter-increment: about-product__item;
+      position: absolute;
       top: 0;
       right: 0;
       width: 136px;
       height: 280px;
+      text-align: center;
+      font-family: $secondary-font;
+      color: #f2f2f2;
       font-size: 280px;
       line-height: 280px;
+      z-index: -1;
     }
   }
 
