@@ -5,6 +5,7 @@ const navigationList = document.querySelector('.navigation__list');
 
 if(navigationList.classList[1] === 'navigation__list--show') {
   navigationList.classList.remove('navigation__list--show');
+  burgerButton.classList.remove('burger-button--hide');
 }
 
 buttonWrapper.addEventListener('click', () => {
