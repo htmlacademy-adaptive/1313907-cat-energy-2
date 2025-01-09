@@ -3,7 +3,7 @@
   padding: 65px 55px 20px;
   min-height: 290px;
   background-color: rgba(104, 183, 56, 0.85);
-  background-image: linear-gradient(rgba(104, 183, 56, 0.85) 100%, #ffffff 0%), image-set("../../images/banner-background@1x.webp" 1x type("image/webp"), "../../images/banner-background@2x.webp" 2x type("image/webp"), "../../images/banner-background@1x.jpg" 1x type("image/jpg"), "../../images/banner-background@2x.jpg" 2x type("image/jpg"));
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85) 100%, #ffffff 0%), image-set("../images/banner-background@1x.webp" 1x type("image/webp"), "../images/banner-background@2x.webp" 2x type("image/webp"), "../images/banner-background@1x.jpg" 1x type("image/jpg"), "../images/banner-background@2x.jpg" 2x type("image/jpg"));
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -36,7 +36,7 @@
     align-items: center;
     padding: 10px 35px;
     min-height: 200px;
-    background-image: linear-gradient(rgba(104, 183, 56, 0.85) 100%, #ffffff 0%), image-set("../../images/banner-background-tablet@1x.webp" 1x type("image/webp"), "../../images/banner-background-tablet@2x.webp" 2x type("image/webp"), "../../images/banner-background-tablet@1x.jpg" 1x type("image/jpg"), "../../images/banner-background-tablet@2x.jpg" 2x type("image/jpg"));
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85) 100%, #ffffff 0%), image-set("../images/banner-background-tablet@1x.webp" 1x type("image/webp"), "../images/banner-background-tablet@2x.webp" 2x type("image/webp"), "../images/banner-background-tablet@1x.jpg" 1x type("image/jpg"), "../images/banner-background-tablet@2x.jpg" 2x type("image/jpg"));
   }
 
   @media (min-width: $desktop-width) {
