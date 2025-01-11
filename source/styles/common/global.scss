@@ -1,1 +1,15 @@
 /* здесь используйте глобальные селекторы img, body, html и так далее */
+.page__body {
+  font-family: $primary-font;
+  font-weight: 400;
+  color: $color-base-text;
+  min-width: 320px;
+  background-color: #ffffff;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  // outline: 1px solid $bg-basic-green;
+}
