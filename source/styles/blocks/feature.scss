@@ -162,8 +162,10 @@
 }
 
 .feature__link {
+  position: relative;
   display: flex;
   align-items: center;
+  width: 120px;
   font-family: $secondary-font;
   font-size: 16px;
   line-height: 16px;
@@ -173,13 +175,14 @@
 
   &::after {
     content: "";
-    display: inline-block;
+    position: absolute;
+    right: 0;
     margin-left: 15px;
     width: 24px;
     height: 12px;
-    mask-image: url("../../icons/stack.svg#arrow");
-    mask-repeat: no-repeat;
-    background-color: #000000;
+    background-image: url("../../icons/stack.svg#arrow");
+    background-repeat: no-repeat;
+    background-size: contain;
     transition: all 0.1s linear;
 
     @media (min-width: $tablet-width) {
@@ -188,8 +191,9 @@
   }
 
   &:hover::after {
+    right: -9;
     width: 32px;
-    mask-image: url("../../icons/stack.svg#long-arrow");
+    background-image: url("../../icons/stack.svg#long-arrow");
   }
 
   &:active {
@@ -202,6 +206,7 @@
 
   @media (min-width: $tablet-width) {
     margin-top: auto;
+    width: 154px;
     font-size: 20px;
   }
 }

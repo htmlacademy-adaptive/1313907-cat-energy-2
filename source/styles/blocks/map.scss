@@ -4,32 +4,25 @@
 }
 
 .map__container {
-  @media (min-width: $desktop-width) {
-    display: grid;
-  }
+  display: grid;
+  grid-template-rows: auto auto;
 }
 
-.map__iframe-wrapper {
-  background-image: url("../../images/location-mobile@1x.webp");
+.map__image {
+  grid-column: 1/-1;
+  grid-row: 2/-1;
+}
 
-  iframe {
-    display: block;
-    width: 100%;
-    height: 362px;
-    border: none;
-  }
+.map__iframe {
+  grid-column: 1/-1;
+  grid-row: 2/-1;
+  display: block;
+  width: 100%;
+  height: 362px;
+  border: none;
+  z-index: 1;
 
   @media (min-width: $tablet-width) {
-    margin: 0 auto;
-    background-image: url("../../images/location-tablet@1x.webp");
-
-    iframe {
-      height: 400px;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    margin: 0;
-    background-image: url("../../images/location@1x.webp");
+    height: 400px;
   }
 }
