@@ -23,6 +23,7 @@
   list-style-type: none;
 
   @media (min-width: $tablet-width) {
+    margin-top: 0;
     grid-template-columns: 560px;
   }
 }
