@@ -12,6 +12,14 @@
   text-transform: uppercase;
   background-color: #ffffff;
 
+  @media (max-width: $mobile-width-only) {
+    &--nojs {
+      padding-bottom: 0;
+      flex-direction: column;
+      align-items: stretch;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     padding: 25px 30px 0;
     width: 768px;
@@ -67,7 +75,7 @@ picture {
 }
 
 .navigation__wrapper {
-  @media (max-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     max-width: 568px;
   }
 }
@@ -77,7 +85,7 @@ picture {
   padding: 0;
   list-style-type: none;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $mobile-width-only) {
     display: none;
 
     &--show {
@@ -86,6 +94,14 @@ picture {
       left: 0;
       display: flex;
       flex-direction: column;
+      width: 100%;
+      background-color: #ffffff;
+    }
+
+    &--nojs {
+      display: flex;
+      flex-direction: column;
+      margin-top: 20px;
       width: 100%;
       background-color: #ffffff;
     }
