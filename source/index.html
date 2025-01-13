@@ -17,7 +17,7 @@
 <body class="page__body">
   <header class="main-header">
     <div class="container">
-      <nav class="navigation">
+      <nav class="navigation navigation--nojs">
         <a class="navigation__logo" href="index.html">
           <picture>
             <source media="(min-width: 1440px)" srcset="images/logo-desktop.svg" width="70" height="59" type="image/svg+xml">
@@ -27,13 +27,13 @@
           <img class="navigation__logo-text" src="images/logo-text.svg" alt="Логотип сайта Cat-energy." width="101" height="18">
         </a>
         <div class="navigation__wrapper">
-          <ul class="navigation__list navigation__list--show">
+          <ul class="navigation__list navigation__list--nojs">
             <li class="navigation__item navigation__item--current"><a class="navigation__link" href="index.html">Главная</a></li>
             <li class="navigation__item"><a class="navigation__link" href="catalog.html">Каталог продукции</a></li>
             <li class="navigation__item"><a class="navigation__link" href="#">Подбор программы</a></li>
           </ul>
         </div>
-        <div class="button-wrapper">
+        <div class="button-wrapper button-wrapper--nojs">
           <button class="burger-button burger-button--hide" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
@@ -46,9 +46,9 @@
             питание для котов</h1>
           <p class="promo__description">Занялся собой? Займись котом!</p>
           <picture class="promo__image">
-            <source media="(min-width: 1440px)" width="552" height="499" type="image/png" srcset="images/index-images/hero-image@1x.png 1x, images/index-images/hero-image@2x.png 2x">
-            <source media="(min-width: 768px)" width="709" height="609" type="image/png" srcset="images/index-images/hero-image-tablet@1x.png 1x, images/index-images/hero-image-tablet@2x.png 2x">
-            <img class="promo__image" src="images/index-images/hero-image-mobile@1x.png" srcset="images/index-images/hero-image-mobile@2x.png 2x" width="280" height="270" alt="Полезная еда для котов.">
+            <source media="(min-width: 1440px)" width="552" height="499" type="image/webp" srcset="images/index-images/hero-image@1x.webp 1x, images/index-images/hero-image@2x.webp 2x">
+            <source media="(min-width: 768px)" width="709" height="609" type="image/webp" srcset="images/index-images/hero-image-tablet@1x.webp 1x, images/index-images/hero-image-tablet@2x.webp 2x">
+            <img class="promo__image" src="images/index-images/hero-image-mobile@1x.webp" srcset="images/index-images/hero-image-mobile@2x.webp 2x" width="280" height="270" alt="Полезная еда для котов.">
           </picture>
           <a class="button button--margin button--grid button--padding" href="program.html">Подобрать программу</a>
         </div>
@@ -108,14 +108,14 @@
           <ul class="slider__list">
             <li class="slider__item slider__item--before">
               <picture class="slider__picture">
-                <source media="(min-width: 768px)" type="image/png" width="560" height="512" srcset="images/index-images/fat-cat-tablet@1x.png 1x, images/index-images/fat-cat-tablet@2x.png 2x">
-                <img class="slider__item-image" src="images/index-images/fat-cat-mobile@1x.png" srcset="images/index-images/fat-cat-mobile@2x.png" width="280" height="256" alt="Фотография упитанного кота.">
+                <source media="(min-width: 768px)" type="image/webp" width="560" height="512" srcset="images/index-images/fat-cat-tablet@1x.webp 1x, images/index-images/fat-cat-tablet@2x.webp 2x">
+                <img class="slider__item-image" src="images/index-images/fat-cat-mobile@1x.webp" srcset="images/index-images/fat-cat-mobile@2x.webp" width="280" height="256" alt="Фотография упитанного кота.">
               </picture>
             </li>
             <li class="slider__item slider__item--after">
               <picture>
-                <source media="(min-width: 768px)" type="image/png" width="560" height="512" srcset="images/index-images/thin-cat-tablet@1x.png 1x, images/index-images/thin-cat-tablet@2x.png 2x">
-                <img class="slider__item-image" src="images/index-images/thin-cat-mobile@1x.png" srcset="images/index-images/thin-cat-mobile@2x.png" width="280" height="256" alt="Фотография худого кота.">
+                <source media="(min-width: 768px)" type="image/webp" width="560" height="512" srcset="images/index-images/thin-cat-tablet@1x.webp 1x, images/index-images/thin-cat-tablet@2x.webp 2x">
+                <img class="slider__item-image" src="images/index-images/thin-cat-mobile@1x.webp" srcset="images/index-images/thin-cat-mobile@2x.webp" width="280" height="256" alt="Фотография худого кота.">
               </picture>
             </li>
           </ul>
@@ -142,10 +142,10 @@
             </address>
           </div>
         </div>
-        <picture class="map__image">
-          <source width="1220" height="400" type="image/png" media="(min-width: 1280px)" srcset="images/location-desktop@1x.png, images/location-desktop@2x.png 2x">
-          <source width="768" height="400" type="image/png" media="(min-width: 768px)" srcset="images/location-tablet@1x.png, images/location-tablet@2x.png 2x">
-          <img src="images/location-mobile@1x.png" srcset="images/location-mobile@2x.png 2x" alt="Мы на карте" width="320" height="362">
+        <picture class="map__image map__image--nojs">
+          <source width="1220" height="400" type="image/webp" media="(min-width: 1280px)" srcset="images/location-desktop@1x.webp, images/location-desktop@2x.webp 2x">
+          <source width="768" height="400" type="image/webp" media="(min-width: 768px)" srcset="images/location-tablet@1x.webp, images/location-tablet@2x.webp 2x">
+          <img src="images/location-mobile@1x.webp" srcset="images/location-mobile@2x.webp 2x" alt="Мы на карте" width="320" height="362">
         </picture>
         <iframe class="map__iframe" src="https://yandex.ru/map-widget/v1/?um=constructor%3A2895c96e2f1a8feac164e56df0adafb1c69e2a571d6e4a2fef786ed781cccdd6&amp;source=constructor"></iframe>
       </div>
