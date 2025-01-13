@@ -66,6 +66,12 @@ picture {
   }
 }
 
+.navigation__wrapper {
+  @media (max-width: $desktop-width) {
+    max-width: 568px;
+  }
+}
+
 .navigation__list {
   margin: 0;
   padding: 0;
@@ -92,7 +98,7 @@ picture {
   }
 
   @media (min-width: $desktop-width) {
-    gap: 33px;
+    gap: 5px 33px;
   }
 }
 
